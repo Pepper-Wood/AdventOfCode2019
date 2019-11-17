@@ -11,7 +11,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "ng build --prod --output-path docs --base-href /AdventOfCode2019/"
+      "pre-commit": "ng build --prod --output-path docs --base-href /AdventOfCode2019/ && cp docs/index.html docs/404.html"
     }
   },
   "private": true,
